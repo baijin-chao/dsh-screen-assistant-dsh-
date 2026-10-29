@@ -1,0 +1,23 @@
+# DSH / Node
+node_modules/
+.pnpm-store/
+pnpm-lock.yaml
+
+# Local test and packaging artifacts
+.test/
+.test-home*/
+.tmp*
+*.log
+*.bak-*
+*.tgz
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Build output (this plugin currently ships plain JS, but keep the ignore)
+dist/
+coverage/

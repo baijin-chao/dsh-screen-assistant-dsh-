@@ -1,0 +1,4 @@
+# 识屏助手：注册宿主插件，并让 Web 端扫描到本包的 ./client 半边。
+- insert:
+    - id: screen-assistant
+      name: dsh-screen-assistant

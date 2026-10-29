@@ -1,0 +1,57 @@
+{
+  "name": "dsh-screen-assistant",
+  "version": "0.1.0",
+  "description": "识屏助手：全局快捷键截取当前屏幕，识别内容并给出解法、操作步骤、答案或总结。",
+  "type": "module",
+  "main": "index.js",
+  "icon": "icon.svg",
+  "author": "baijin-chao",
+  "homepage": "https://github.com/baijin-chao/dsh-screen-assistant-dsh-#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baijin-chao/dsh-screen-assistant-dsh-.git"
+  },
+  "bugs": {
+    "url": "https://github.com/baijin-chao/dsh-screen-assistant-dsh-/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "runtime/capture-screen.ps1",
+    "runtime/global-hotkey.ps1",
+    "icon.svg",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "screen",
+    "screenshot",
+    "vision",
+    "ocr",
+    "识屏"
+  ],
+  "license": "MIT",
+  "engines": {
+    "dsh": ">=0.2.1-rc.3 <0.3.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-llm": ">=0.2.1-rc.3 <0.3.0",
+    "@deepseek-ai/dsh-tools": ">=0.2.1-rc.3 <0.3.0"
+  }
+}
