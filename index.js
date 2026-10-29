@@ -9,6 +9,8 @@
  *
  * 截屏走 Windows 自带的 PowerShell + GDI，不依赖任何原生模块；
  * 图片通过 harness 的 attachments 服务入库后作为 ImageBlock 交给模型。
+ *
+ * 安装/使用说明见 README.md；DSH「插件 → 添加插件」可直接粘贴本仓库的 GitHub 地址。
  */
 import { spawn } from 'node:child_process'
 import { randomUUID } from 'node:crypto'

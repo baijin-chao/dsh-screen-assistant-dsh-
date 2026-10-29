@@ -24,7 +24,22 @@ GitHub：<https://github.com/baijin-chao/dsh-screen-assistant-dsh->
 
 ## 安装
 
-### 从 GitHub 安装
+### 方式一：在 DSH 里直接装（推荐）
+
+1. 打开 DSH 左侧栏的「插件」→「添加插件」。
+2. 在输入框里填 GitHub 仓库地址：
+
+   ```text
+   https://github.com/baijin-chao/dsh-screen-assistant-dsh-.git
+   ```
+
+   注意仓库名结尾有一个 `-`，请完整复制。
+3. 安装源如果有 GitHub 就选 GitHub；没有的话保留默认，粘贴完整 URL 会被识别为 git 地址，不会去 npm 找包名。
+4. 安装完成后**重启一次 DSH**。
+
+本插件是纯 JavaScript，没有构建步骤，GitHub 安装会直接拉取源码，不需要 `pnpm build`。
+
+### 方式二：命令行安装
 
 ```powershell
 git clone https://github.com/baijin-chao/dsh-screen-assistant-dsh-.git
@@ -40,9 +55,9 @@ dsh plugin --profile desktop add .
 
 `install.ps1` 会自动查找 DSH 自带的 CLI、备份 profile 配置、安装并检查 bundles 列表。
 
-### 用 DSH 插件管理器
+### 方式三：本地目录安装
 
-在 DSH 左侧栏打开「插件」→ 安装本地插件 → 选择本目录。
+在 DSH 左侧栏打开「插件」→ 添加插件 → 选择本地目录（本仓库根目录）。
 
 ### 安装后
 
